@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //nav links
+            $('#links a').mouseenter(function() {
+                $(this).css("color", "#37465D");
+                $(this).css("background-color", "#ffffffa8");
+            });
+            $('#links a').mouseleave(function() {
+                $(this).css("color", "rgba(109, 82, 86, 0.671)");
+                $(this).css("background-color", "#ff000000");
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="pagewrap">
+        <nav>
+            <div id="logo">
+                <p class="title">bon<br>&nbsp;appétit</p>
+            </div>
+            <ul id="links">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./desserts.html">desserts</a></li>
+                <li><a href="./events.html">events</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="main">
+            <div id="eventcontainer">
+                <div class="eventlabel">
+                    <h1 id="dalgonah1">whipped coffee and japanese soufflé pancakes</h1>
+                    <p id="dalgonap">The internet is currently going crazy over this new viral drink called “Dalgona Coffee”. This popular coffee drink originated in Korea and now everyone can’t wait to make their own version! It’s a fluffy almost pillow like consistency
+                        made entirely of coffee paired with any milk of your choice. The viral drink is nothing shy of a cloudy creamy heaven. And what better to pair it with? Nothing but the most fluffy soufflé pancakes!</p>
+                </div>
+                <iframe width="500" height="255" src="https://www.youtube.com/embed/DwjPPb0HVlg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="eventlabel">
+                    <h1 id="macaronh1">french macaron recipe</h1>
+                    <p id="macaronp">Everyone knows what a French macaron is, but everyone also knows how incredibly hard they are to make. I decided to take on that challenge for the sake of everyone else. After multiple trial and errors I think I’ve got the technique
+                        down and wanted to share with everyone else! Don’t be intimidated and when you’ve officially mastered it, you’ll thank me later.</p>
+                </div>
+                <iframe width="500" height="255" src="https://www.youtube.com/embed/K8L_lj_kAzc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script>
+            document.write("This page was last modified by Thea Arias: " +
+                document.lastModified);
+        </script>
+    </footer>
+</body>
+
+</html>

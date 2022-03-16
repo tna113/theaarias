@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //nav links
+            $('#links a').mouseenter(function() {
+                $(this).css("color", "#37465D");
+                $(this).css("background-color", "#ffffffa8");
+            });
+            $('#links a').mouseleave(function() {
+                $(this).css("color", "rgba(109, 82, 86, 0.671)");
+                $(this).css("background-color", "#ff000000");
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="pagewrap">
+        <nav>
+            <div id="logo">
+                <p class="title">bon<br>&nbsp;appétit</p>
+            </div>
+            <ul id="links">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./desserts.html">desserts</a></li>
+                <li><a href="./events.html">events</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="main">
+            <div id="aboutdesc">
+                <h1>hello!</h1>
+                <p>Welcome to to <span>bon appétit</span>. I started baking out of pure boredom, then eventually I started taking orders, and now here I am launching my very own business. There are an array of options to choose from. We have the classical
+                    French macaroons, delicious custard filled donuts, and delicate rich cupcakes. Everything is made in-house with fresh and locally sourced organic ingredients. We strive for nothing but perfection at <span>bon appétit</span> and deliver
+                    nothing less of that. We also offer personalized options for any event. Ask and you shall receive! Please take the time to indulge in any of the items we have to offer.</p>
+            </div>
+            <div id="aboutpic">
+                <img src="./media/headshot.jpg" alt="Wanida Ketavongsa">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script>
+            document.write("This page was last modified by Thea Arias: " +
+                document.lastModified);
+        </script>
+    </footer>
+</body>
+
+</html>

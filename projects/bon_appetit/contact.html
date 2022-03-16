@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        //form validation
+        var name;
+        var email;
+
+        function validate() {
+            fname = document.getElementById("name").value;
+            email = document.getElementById("email").value;
+
+            if (fname == "") {
+                alert("Please enter a valid first name");
+                return false;
+            }
+            if (email == "") {
+                alert("Please enter a valid email");
+                return false;
+            }
+        }
+
+        $(document).ready(function() {
+            $('#name').focus(); //focus on name input when page loads
+
+            //nav links
+            $('#links a').mouseenter(function() {
+                $(this).css("color", "#37465D");
+                $(this).css("background-color", "#ffffffa8");
+            });
+            $('#links a').mouseleave(function() {
+                $(this).css("color", "rgba(109, 82, 86, 0.671)");
+                $(this).css("background-color", "#ff000000");
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="pagewrap">
+        <nav>
+            <div id="logo">
+                <p class="title">bon<br>&nbsp;appétit</p>
+            </div>
+            <ul id="links">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./desserts.html">desserts</a></li>
+                <li><a href="./events.html">events</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="main">
+            <form action="http://www.formbuddy.com/cgi-bin/form.pl" method="post">
+                <input type="hidden" name="username" value="tarias">
+                <input type="hidden" name="reqd" value="0">
+                <input type="hidden" name="url" value="http://studentweb.monroecc.edu/students/tarias/FA_CIS201SL1/project/submitted.html">
+                <input type="hidden" name="formssubject" value="bon appétit form submission">
+
+                <header id="contactheader">
+                    hi, lets talk
+                </header>
+
+                <div id="formcontainer">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" value="" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="" required>
+                    <label class="inquirytype">Inquiry Type</label>
+                    <select name="inquirytype" id="inquirytype" required>
+                        <option value="">Select</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="order">Order</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea cols="60" rows="10" id="message" value="">Start typing here...</textarea>
+                    <div class="formbutton">
+                        <button type="submit" style="font-size:.7em; letter-spacing: 2px; font-weight: bold;">submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <script>
+            document.write("This page was last modified by Thea Arias: " +
+                document.lastModified);
+        </script>
+    </footer>
+</body>
+
+</html>

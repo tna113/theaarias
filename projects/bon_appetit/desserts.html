@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //nav links
+            $('#links a').mouseenter(function() {
+                $(this).css("color", "#37465D");
+                $(this).css("background-color", "#ffffffa8");
+            });
+            $('#links a').mouseleave(function() {
+                $(this).css("color", "rgba(109, 82, 86, 0.671)");
+                $(this).css("background-color", "#ff000000");
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="pagewrap">
+        <nav>
+            <div id="logo">
+                <p class="title">bon<br>&nbsp;appétit</p>
+            </div>
+            <ul id="links">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./desserts.html">desserts</a></li>
+                <li><a href="./events.html">events</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="main">
+            <div class="dessertcontainer">
+                <div id="macarons">
+                    <fieldset>
+                        <legend>macarons</legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th id="mac1pic"></th>
+                                    <th id="mac1info"></th>
+                                    <th id="mac2pic"></th>
+                                    <th id="mac2info"></th>
+                                    <th id="mac3pic"></th>
+                                    <th id="mac3info"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td headers="mac1pic" class="dimg"><img src="./media/mac_oreo_thumb.jpg" alt="oreo macarons" height="110" width="110"></td>
+                                    <td headers="mac1info" class="ddesc">
+                                        <div>
+                                            <h1>Oreo Macaron</h1>
+                                            <p>Filled with a creamy Oreo buttercream with chunks of Oreo cookie.</p>
+                                        </div>
+                                    </td>
+
+                                    <td headers="mac2pic" class="dimg1"><img src="./media/mac_strawlem_thumb.jpg" alt="strawberry lemon macarons" height="110" width="110"></td>
+                                    <td headers="mac2info" class="ddesc1">
+                                        <div>
+                                            <h1 style="margin-right:40px;">Strawberry and Orange Zest Macaron</h1>
+                                            <p>Pink: Filled with strawberry jam surrounded by a silky smooth French buttercream. Orange: Filled with orange zest infused French buttercream to give you a hint of citrus. </p>
+                                        </div>
+                                    </td>
+
+                                    <td headers="mac3pic" class="dimg"><img src="./media/mac_pink3_thumb.jpg" alt="pink and purple vanilla macarons" height="110" width="110"></td>
+                                    <td headers="mac3info" class="ddesc">
+                                        <div>
+                                            <h1>Vanilla Macaron</h1>
+                                            <p>Filled with your classic smooth vanilla French buttercream.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+
+                <div id="cupcakes">
+                    <fieldset>
+                        <legend>cupcakes</legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th id="cupcake1pic"></th>
+                                    <th id="cupcake1info"></th>
+                                    <th id="cupcake2pic"></th>
+                                    <th id="cupcake2info"></th>
+                                    <th id="cupcake3pic"></th>
+                                    <th id="cupcake3info"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td headers="cupcake1pic" class="dimg"><img src="./media/cup_choc_thumb.jpg" alt="chocolate cupcakes" height="110" width="110"></td>
+                                    <td headers="cupcake1info" class="ddesc">
+                                        <div>
+                                            <h1>Swiss Chocolate Cupcake</h1>
+                                            <p>A decadent chocolate cake topped with a Swiss meringue buttercream drizzled with Swiss milk chocolate.</p>
+                                        </div>
+                                    </td>
+
+                                    <td headers="cupcake2pic" class="dimg1"><img src="./media/cup_straw_thumb.jpg" alt="strawberry cupcakes" height="110" width="110"></td>
+                                    <td headers="cupcake2info" class="ddesc1">
+                                        <div>
+                                            <h1>Strawberry Shortcake Cupcake</h1>
+                                            <p>Strawberry cake filled with a luxurious whipped cream and topped with a freeze dried strawberry buttercream.</p>
+                                        </div>
+                                    </td>
+
+                                    <td headers="cupcake3pic" class="dimg"><img src="./media/cupcakes_thumb.jpg" alt="red velvet cupcakes" height="110" width="110"></td>
+                                    <td headers="cupcake3info" class="ddesc">
+                                        <div>
+                                            <h1>Red Velvet Cupcake</h1>
+                                            <p>Classic red chocolate cake topped with a smooth and sweet cream cheese buttercream.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+
+                <div id="other">
+                    <fieldset>
+                        <legend>others</legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th id="other1pic"></th>
+                                    <th id="other1info"></th>
+                                    <th id="other2pic"></th>
+                                    <th id="other2info"></th>
+                                    <th id="other3pic"></th>
+                                    <th id="other3info"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td headers="other1pic" class="dimg"><img src="./media/applepuffpastry_thumb.jpg" alt="apple puff pastry" height="110" width="110"></td>
+                                    <td headers="other1info" class="ddesc">
+                                        <div>
+                                            <h1>Custard cream apple puff pastry</h1>
+                                            <p>A delicate and crispy puff pastry filled with a creamy vanilla custard and homemade apple jam.</p>
+                                        </div>
+                                    </td>
+
+                                    <td headers="other2pic" class="dimg1"><img src="./media/applepie1_thumb.jpg" alt="salted caramel apple pie" height="110" width="110"></td>
+                                    <td headers="other2info" class="ddesc1">
+                                        <div>
+                                            <h1>Salted Carmel Apple Pie</h1>
+                                            <p>A homemade apple pie with a twist. Filled with honey crisp apples and a whole lot of salted caramel sauce to create a sweet and sticky apple pie.</p>
+                                        </div>
+                                    </td>
+
+                                    <td headers="other3pic" class="dimg"><img src="./media/donut.jpg" alt="pink and purple vanilla macarons" height="110" width="110"></td>
+                                    <td headers="other3info" class="ddesc">
+                                        <div>
+                                            <h1>Classic Custard Filled Donut</h1>
+                                            <p>Light and airy donut filled with your a vanilla bean custard.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <script>
+            document.write("This page was last modified by Thea Arias: " +
+                document.lastModified);
+        </script>
+    </footer>
+</body>
+
+</html>
